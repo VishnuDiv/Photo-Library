@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller = "controller.SlideShowController">
+   <children>
+      <ImageView fx:id="image" fitHeight="264.0" fitWidth="509.0" layoutX="46.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="returnToAlbum" layoutX="222.0" layoutY="334.0" mnemonicParsing="false" text="Return To Album Details" onMouseClicked="#backButton"/>
+      <Button fx:id="previous" layoutX="53.0" layoutY="334.0" mnemonicParsing="false" text="Previous " onMouseClicked="#prevButton"/>
+      <Button fx:id="next" layoutX="496.0" layoutY="334.0" mnemonicParsing="false" text="Next" onMouseClicked="#nextButton"/>
+      <Button fx:id="quit" layoutX="19.0" layoutY="14.0" mnemonicParsing="false" text="Quit Button" onMouseClicked="#quit" />
+   </children>
+</AnchorPane>
