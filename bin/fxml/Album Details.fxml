@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.DatePicker?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller = "controller.Albumcontroller" >
+   <children>
+      <Button fx:id="create_detail" layoutX="32.0" layoutY="351.0" mnemonicParsing="false" text="Create Album" onMouseClicked="#createAlbum"/>
+      <Button fx:id="delete_detail" layoutX="141.0" layoutY="351.0" mnemonicParsing="false" text="Delete Album" onMouseClicked="#deleteAlbum"/>
+      <Button fx:id="rename_detail" layoutX="250.0" layoutY="351.0" mnemonicParsing="false" text="Rename Album" onMouseClicked="#renameAlbum" />
+      <Button fx:id="open_detail" layoutX="372.0" layoutY="351.0" mnemonicParsing="false" text="Open Album" onMouseClicked="#openAlbum" />
+      <Button fx:id="search_detail" layoutX="476.0" layoutY="351.0" mnemonicParsing="false" text="Album Search" onMouseClicked="#searchAlbum" />
+      <ListView fx:id="list_detail" layoutX="24.0" layoutY="53.0" prefHeight="257.0" prefWidth="201.0" />
+      <Text layoutX="377.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details :">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="315.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album Name" />
+      <Text layoutX="292.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Photos" />
+      <Text layoutX="298.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Range  of Dates" />
+      <TextField fx:id="name_detail" layoutX="396.0" layoutY="98.0" />
+      <TextField fx:id="number_detail" layoutX="396.0" layoutY="146.0" />
+      <TextField fx:id="range_detail" layoutX="396.0" layoutY="188.0" />
+      <ImageView fx:id="preview_detail" fitHeight="114.0" fitWidth="160.0" layoutX="396.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="297.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album Preview" />
+      <Button fx:id="logout_detail" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" text="Logout" onMouseClicked="#Logout"/>
+      <Button fx:id="quit" layoutX="496.0" layoutY="14.0" mnemonicParsing="false" text="Quit Program" onMouseClicked="#quit" />
+   </children>
+</AnchorPane>
